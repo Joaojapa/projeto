@@ -18,7 +18,7 @@
   font-family: Arial, sans-serif;
   text-align: center;
   padding: 20px;
-  background-color: #f5f5f5;
+  background-color: black;
 }
 
 .user-info {
@@ -73,7 +73,7 @@
   padding: 20px;
   border: 1px solid #ddd;
   border-radius: 8px;
-  background-color: #ffffff;
+  background-color: black;
   max-width: 600px;
   width: 100%;
 }

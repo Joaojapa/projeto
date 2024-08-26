@@ -5,6 +5,7 @@ import './App.css';
 const questions = [
   {
     question: 'Qual das seguintes opções NÃO é uma linguagem de marcação?',
+    type: 'multiple-choice', // Tipo de pergunta
     options: [
       { label: 'a) HTML', value: 'HTML' },
       { label: 'b) XML', value: 'XML' },
@@ -21,6 +22,7 @@ const questions = [
   },
   {
     question: 'Qual das seguintes opções é usada para adicionar interatividade a uma página web?',
+    type: 'multiple-choice',
     options: [
       { label: 'a) HTML', value: 'HTML' },
       { label: 'b) CSS', value: 'CSS' },
@@ -36,7 +38,34 @@ const questions = [
     }
   },
   {
+    question: 'A tag <a> é usada para criar links em uma página HTML.',
+    type: 'true-false', // Tipo de pergunta
+    options: [
+      { label: 'a) Verdadeiro', value: 'Verdadeiro' },
+      { label: 'b) Falso', value: 'Falso' }
+    ],
+    answer: 'Verdadeiro',
+    feedback: {
+      Verdadeiro: 'Correto! A tag <a> é usada para criar hyperlinks em HTML.',
+      Falso: 'Incorreto. A tag <a> é de fato usada para criar hyperlinks.'
+    }
+  },
+  {
+    question: 'CSS é uma linguagem de programação.',
+    type: 'true-false',
+    options: [
+      { label: 'a) Verdadeiro', value: 'Verdadeiro' },
+      { label: 'b) Falso', value: 'Falso' }
+    ],
+    answer: 'Falso',
+    feedback: {
+      Verdadeiro: 'Incorreto. CSS é uma linguagem de estilo, não uma linguagem de programação.',
+      Falso: 'Correto! CSS é usada para definir o estilo de documentos HTML, não para programação.'
+    }
+  },
+  {
     question: 'Qual tag HTML é usada para adicionar um link em uma página web?',
+    type: 'multiple-choice',
     options: [
       { label: 'a) <div>', value: '<div>' },
       { label: 'b) <link>', value: '<link>' },
@@ -53,6 +82,7 @@ const questions = [
   },
   {
     question: 'Qual propriedade CSS é usada para alterar a cor de fundo de um elemento?',
+    type: 'multiple-choice',
     options: [
       { label: 'a) color', value: 'color' },
       { label: 'b) background-color', value: 'background-color' },
@@ -69,6 +99,7 @@ const questions = [
   },
   {
     question: 'Qual das seguintes técnicas é usada para melhorar o desempenho de uma página web ao carregar imagens?',
+    type: 'multiple-choice',
     options: [
       { label: 'a) Usar imagens em alta resolução', value: 'Usar imagens em alta resolução' },
       { label: 'b) Carregar todas as imagens imediatamente', value: 'Carregar todas as imagens imediatamente' },

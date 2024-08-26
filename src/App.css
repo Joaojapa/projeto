@@ -19,6 +19,7 @@
   text-align: center;
   padding: 20px;
   background-color: black;
+  color: white;
 }
 
 .user-info {
@@ -76,6 +77,7 @@
   background-color: black;
   max-width: 600px;
   width: 100%;
+  color: white;
 }
 
 .options {

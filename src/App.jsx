@@ -6,7 +6,7 @@ const questions = [
   {
     question: 'Qual das seguintes opções NÃO é uma linguagem de marcação?',
     type: 'multiple-choice', // Tipo de pergunta
-    options: [
+    opção: [
       { label: 'a) HTML', value: 'HTML' },
       { label: 'b) XML', value: 'XML' },
       { label: 'c) CSS', value: 'CSS' },
@@ -23,7 +23,7 @@ const questions = [
   {
     question: 'Qual das seguintes opções é usada para adicionar interatividade a uma página web?',
     type: 'multiple-choice',
-    options: [
+    opção: [
       { label: 'a) HTML', value: 'HTML' },
       { label: 'b) CSS', value: 'CSS' },
       { label: 'c) JavaScript', value: 'JavaScript' },
@@ -40,7 +40,7 @@ const questions = [
   {
     question: 'A tag <a> é usada para criar links em uma página HTML.',
     type: 'true-false', // Tipo de pergunta
-    options: [
+    opção: [
       { label: 'a) Verdadeiro', value: 'Verdadeiro' },
       { label: 'b) Falso', value: 'Falso' }
     ],
@@ -53,7 +53,7 @@ const questions = [
   {
     question: 'CSS é uma linguagem de programação.',
     type: 'true-false',
-    options: [
+    opção: [
       { label: 'a) Verdadeiro', value: 'Verdadeiro' },
       { label: 'b) Falso', value: 'Falso' }
     ],
@@ -66,7 +66,7 @@ const questions = [
   {
     question: 'Qual tag HTML é usada para adicionar um link em uma página web?',
     type: 'multiple-choice',
-    options: [
+    opção: [
       { label: 'a) <div>', value: '<div>' },
       { label: 'b) <link>', value: '<link>' },
       { label: 'c) <a>', value: '<a>' },
@@ -83,7 +83,7 @@ const questions = [
   {
     question: 'Qual propriedade CSS é usada para alterar a cor de fundo de um elemento?',
     type: 'multiple-choice',
-    options: [
+    opção: [
       { label: 'a) color', value: 'color' },
       { label: 'b) background-color', value: 'background-color' },
       { label: 'c) border-color', value: 'border-color' },
@@ -100,7 +100,7 @@ const questions = [
   {
     question: 'Qual das seguintes técnicas é usada para melhorar o desempenho de uma página web ao carregar imagens?',
     type: 'multiple-choice',
-    options: [
+    opção: [
       { label: 'a) Usar imagens em alta resolução', value: 'Usar imagens em alta resolução' },
       { label: 'b) Carregar todas as imagens imediatamente', value: 'Carregar todas as imagens imediatamente' },
       { label: 'c) Utilizar lazy loading', value: 'Utilizar lazy loading' },
@@ -189,8 +189,8 @@ function App() {
           <h1>Questionário</h1>
           <div className="question-card">
             <h2>{currentQuestion.question}</h2>
-            <div className="options">
-              {currentQuestion.options.map((option, index) => (
+            <div className="opção">
+              {currentQuestion.opção.map((option, index) => (
                 <div key={index} className="option-item">
                   <input
                     type="radio"
